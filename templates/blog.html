@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block blogactive %}active{% endblock blogactive %}
+{% block body %}
+
+
+<div class="container text-center my-3">
+<h1>Welcome to our blog
+</h1>
+{% for blog in blogs %}
+
+
+  
+    
+  <div class="my-3 ">
+   <h3 class =''> <a href="/blogpost/{{blog.slug}}" class="text-dark">{{blog.title}}</a></h3>
+   <div class="my-3">
+   {{blog.content|slice:300}}...
+</div>
+ <a href="/blogpost/{{blog.slug}}" class="text-dark"> <button type="button" class="btn btn-primary">Read more...</button></a>
+</div>
+{% endfor %}
+
+  
+</div>
+{% endblock body %}

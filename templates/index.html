@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block homeactive %}active{% endblock homeactive %}
+{% block body %}
+<div class="container-fluid px-0 mx-0">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner text-center">
+    <div class="carousel-item active">
+    <img src="static/slise2.jfif" class="d-block w-100" alt="...">
+
+    </div>
+    <div class="carousel-item">
+      <img src="static/slide1.jfif"class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="static/slise2.jfif"class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+<div class="container my-3">
+<div class="row">
+
+<div class="col-md-4 text-center">
+     <img src="static/3rd.jfif " class="d-block w-100" alt="loading...">
+  <h4>Services</h4>
+  <p>  This is some content from a media component. You can replace this with any content and adjust it as needed.</P>
+  </div>
+
+<div class="col-md-4  text-center">
+     <img src="static/last.jfif" class="d-block w-100" alt="loading...">
+
+<h4> About</h4>
+<p>
+    This is some content from a media component. You can replace this with any content and adjust it as needed.</P>
+    </div>
+
+<div class="col-md-4  text-center">
+     <img src="static/2ndlast.jfif " class="d-block w-100" alt="loading...">
+ <h4>Tasks</h4>
+   <p> This is some content from a media component. You can replace this with any content and adjust it as needed.</p>
+  </div>
+
+
+</div>
+</div>
+
+
+
+{% endblock body %}
